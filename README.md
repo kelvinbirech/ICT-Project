@@ -1,26 +1,27 @@
 # ICT-Project
 
-THIS REPO IS FOR THE LAST PROJECT OF COURSE WORK DSE. Collaborated by 4 members Omar moh'dNoor (Spokesperson), Kiplangat Edwin(Process Analyst), Humprey Njeri Kamau(Quality Control) and Kelvin Birech(Team Leader) towards DEVELOPMENT OF AN ONLINE ICT ACCES SYSTEM BASED ON KENYA
+THIS REPO IS FOR THE LAST PROJECT OF COURSE WORK DSE. Collaborated by 4 members Omar moh'dNoor (Spokesperson), Kiplangat Edwin(Process Analyst), Humprey Kamau Njeri(Quality Control) and Kelvin Birech(Team Leader) towards DEVELOPMENT OF AN ONLINE ICT ACCES SYSTEM BASED ON KENYA
 
-- [ICT-Project](#ict-project)
-  - [Introductuion](#introductuion)
+  - [Introductuion](#introduction)
   - [Objectives](#objectives)
   - [Software Requirement Specification](#software-requirement-specification)
-  - [The Users Of  The System](#the-users-of--the-system)
+  - [The Users Of The System](#the-users-of-the-system)
   - [Functional Requirements](#functional-requirements)
-  - [Software  Design Description](#software--design-description)
+  - [Authentication Module](#Authentication-Module)
+  - [Software Design Description](#software-design-description)
 
 ## Introductuion
-
+This is a group project aimed towards the development of an online ICT service access system for easy access of ICT services from ICT proffesionals.
+This system will quench the high demand of ICT services by connecting employers with their employees of choice.
 ## Objectives
 
 ## Software Requirement Specification
 
-## The Users Of  The System
+## The Users Of The System
 
 ## Functional Requirements
 
-1. ###  Authentication Module
+### Authentication Module
 
      1. Creating User Accounts
      2. Login
@@ -29,8 +30,6 @@ THIS REPO IS FOR THE LAST PROJECT OF COURSE WORK DSE. Collaborated by 4 members 
      5. Password Reset
      6. Profile Editing
 
-## Software  Design Description
+## Software Design Description
 
 It contains images of how the system look
-
-1. ### Home Page
