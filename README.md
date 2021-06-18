@@ -14,6 +14,7 @@ THIS REPO IS FOR THE LAST PROJECT OF COURSE WORK DSE. Collaborated by 4 members 
 This is a group project aimed towards the development of an online ICT service access system for easy access of ICT services from ICT proffesionals.
 This system will quench the high demand of ICT services by connecting employers with their employees of choice.
 ## Objectives
+The objectives of this project is to allow the new employees seeking or quenching their unemployment thirst to their respective employers.
 
 ## Software Requirement Specification
 
