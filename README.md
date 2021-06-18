@@ -16,16 +16,19 @@ This system will quench the high demand of ICT services by connecting employers 
 ## Objectives
 The objectives of this project is to allow the new employees seeking or quenching their unemployment thirst to their respective employers.
 
-## Software Requirement Specification
-
 ## The Users Of The System
+   1.Employees
+   2.Employers
 
-## Functional Requirements
-
-### Authentication Module
-
+## Functional Requirements.
      1. Creating User Accounts
+        a)ask the user to either sign in or sign up.
+        b) if sign up,a window that asks individuals credentials will appear.
+             
      2. Login
+       a) provides the user with text fields where they are asked to enter their username or password.
+       b) if the username and the password is correct,the user will be directed to the homepage or dashboard of the system.
+       C) if the password or the username is incorrect,the user will be asked to enter correct credentials. 
      3. Profile
      4. logout
      5. Password Reset
