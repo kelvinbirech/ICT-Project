@@ -18,6 +18,7 @@ The objectives of this project is to allow the new employees seeking or quenchin
 
 ## The Users Of The System
    1.Employees
+
    2.Employers
 
 ## Functional Requirements.
@@ -29,6 +30,7 @@ The objectives of this project is to allow the new employees seeking or quenchin
        a) provides the user with text fields where they are asked to enter their username or password.
        b) if the username and the password is correct,the user will be directed to the homepage or dashboard of the system.
        C) if the password or the username is incorrect,the user will be asked to enter correct credentials. 
+
      3. Profile
      4. logout
      5. Password Reset
