@@ -1,6 +1,6 @@
 
 
-### This repesitory is for the last project of DIPLOMA IN SOFWARE ENGINEERING Course work. Collaborated by 4 members Omar moh'dNoor (Spokesperson), Kiplangat Edwin(Process Analyst), Humprey Kamau Njeri(Quality Control) and Kelvin Birech(Team Leader) towards DEVELOPMENT OF AN ONLINE ICT ACCES SYSTEM BASED ON KENYA
+### This repesitory is for the last project of DIPLOMA IN SOFWARE ENGINEERING Course work. Collaborated by 4 members Omar moh'dNoor (Spokesperson), Kiplangat Edwin(Process Analyst), Humphrey Kamau Njeri(Quality Control) and Kelvin Birech(Team Leader) towards DEVELOPMENT OF AN ONLINE ICT ACCES SYSTEM BASED ON KENYA
 
 &nbsp;
 # ZETECH UNIVERSITY
@@ -20,7 +20,7 @@
 
 ### DSE-01-0158/2019 Kelvin Birech
 
-### DSE-01-1617/2020 Humphrey Njeri Kamau
+### DSE-01-1617/2020 Humphrey Kamau Njeri
 
 &nbsp;  
 
