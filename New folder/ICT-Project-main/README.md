@@ -48,7 +48,7 @@ The objectives of this project is to allow the new employees seeking or quenchin
   
 5. ### Password Reset
 
-   When a user forgets a password he/she can reset it  and be able to use the new password.
+   When a uder forgets a password he/she can reset it  and be able to use the new password.
 
 6. ### Profile Editing
 
