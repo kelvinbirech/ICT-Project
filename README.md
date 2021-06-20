@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ICT-Project
 
 THIS REPO IS FOR THE LAST PROJECT OF COURSE WORK DSE. Collaborated by 4 members Omar moh'dNoor (Spokesperson), Kiplangat Edwin(Process Analyst), Humprey Kamau Njeri(Quality Control) and Kelvin Birech(Team Leader) towards DEVELOPMENT OF AN ONLINE ICT ACCES SYSTEM BASED ON KENYA
@@ -114,4 +113,3 @@ The objectives of this project is to allow the new employees seeking or quenchin
 ## Software Design Description
 
 It contains images of how the system look
->>>>>>> 50336d73b171915d0459ead740ad10260799a7c5
