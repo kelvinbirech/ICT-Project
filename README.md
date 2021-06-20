@@ -20,9 +20,9 @@ The objectives of this project is to allow the new employees seeking or quenchin
 
 ## The Users Of The System
 
-   1.Employees
+   1. Employees
 
-   2.Employers
+   2. Employers
 
 ## Functional Requirements
 
