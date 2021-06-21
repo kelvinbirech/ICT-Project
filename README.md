@@ -1,12 +1,46 @@
-# ICT-Project
+# ZETECH UNIVERSITY
 
-THIS REPO IS FOR THE LAST PROJECT OF COURSE WORK DSE. Collaborated by 4 members Omar moh'dNoor (Spokesperson), Kiplangat Edwin(Process Analyst), Humprey Kamau Njeri(Quality Control) and Kelvin Birech(Team Leader) towards DEVELOPMENT OF AN ONLINE ICT ACCES SYSTEM BASED ON KENYA
+## ICT Department
 
-- [ICT-Project](#ict-project)
+This repesitory is for the last project of DIPLOMA IN  SOFWARE ENGINEERING Course work. Collaborated by 4 members Omar moh'dNoor (Spokesperson), Kiplangat Edwin(Process Analyst), Humprey Kamau Njeri(Quality Control) and Kelvin Birech(Team Leader) towards DEVELOPMENT OF AN ONLINE ICT ACCES SYSTEM BASED ON KENYA
+
+&nbsp;
+
+## Computer Systems Project
+
+## Sofware Requirement Specification
+
+&nbsp;  
+
+### DSE-01-0015/2020 Kiplangat Edwin
+
+### DSE-01-0010/2020 Omar moh’d noor
+
+### DSE-01-0158/2019 Kelvin Birech
+
+### DSE-01-1617/2020 Humphrey Njeri Kamau
+
+&nbsp;  
+
+- [ZETECH UNIVERSITY](#zetech-university)
+  - [ICT Department](#ict-department)
+  - [Computer Systems Project](#computer-systems-project)
+  - [Sofware Requirement Specification](#sofware-requirement-specification)
+    - [DSE-01-0015/2020 Kiplangat Edwin](#dse-01-00152020-kiplangat-edwin)
+    - [DSE-01-0010/2020 Omar moh’d noor](#dse-01-00102020-omar-mohd-noor)
+    - [DSE-01-0158/2019 Kelvin Birech](#dse-01-01582019-kelvin-birech)
+    - [DSE-01-1617/2020 Humphrey Njeri Kamau](#dse-01-16172020-humphrey-njeri-kamau)
   - [Introductuion](#introductuion)
   - [Objectives](#objectives)
   - [The Users Of The System](#the-users-of-the-system)
+    - [Skilled IT guys](#skilled-it-guys)
+    - [Employers](#employers)
   - [Functional Requirements](#functional-requirements)
+    - [Creating User Accounts](#creating-user-accounts)
+    - [Login](#login)
+    - [Profile editing](#profile-editing)
+    - [logout](#logout)
+    - [Password Reset](#password-reset)
   - [Software Design Description](#software-design-description)
 
 ## Introductuion
@@ -20,37 +54,39 @@ The objectives of this project is to allow the new employees seeking or quenchin
 
 ## The Users Of The System
 
-   1. Employees
+### Skilled IT guys
 
-   2. Employers
+    This are people who are skilled in IT and they will be able to create their profiles and try to find any employer intrested in whatever field they are good at.
+
+### Employers
+
+    This are the people who will be looking for experienced IT persons to hire and fulfill tasks that meets their criteria.
 
 ## Functional Requirements
 
-1. ###  Creating User Accounts
+### Creating User Accounts
 
-     1. At this point the user has an option to create an account.
-     2. if one is already a member there is an option for login.
-     3. if sign up,a window that asks individuals credentials will   appear.
+        a)A user who is new to the system will be presented with a screen where they will be able to sign up
 
-2. ###  Login
+### Login
 
-      1. provides the user with text fields where they are asked to enter their username or password.
-      2. if the username and the password is correct,the user will be directed to the homepage or dashboard of the system.
-      3. if the password or the username is incorrect,the user will be asked to enter correct credentials.
-  
-3. ### Profile
+       a) provides the user with text fields where they are asked to enter their username or password if they are already registered users of the system.
+       b) if the username and the password is correct,the user will be directed to the homepage or dashboard of the system.
+       C) if the password or the username is incorrect,the user will be asked to enter correct credentials.
 
-      In this module the user should  Be able to see his/her profile.
+### Profile editing
 
-4. ###  logout
+users will be able to view their profiles from this page and be allowed to make changes
 
-   The user of the system is able to logout successfully
-  
-5. ### Password Reset
+### logout
 
-   When a user forgets a password he/she can reset it  and be able to use the new password.
+    this option will allow to users to log out of the system
 
-6. ### Profile Editing
+### Password Reset
+
+this will allow users to change their password and reset if forgotten
+
+&nbsp;
 
 ## Software Design Description
 
