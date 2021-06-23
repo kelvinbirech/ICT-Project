@@ -43,7 +43,6 @@ This repesitory is for the last project of DIPLOMA IN  SOFWARE ENGINEERING Cours
     - [logout](#logout)
     - [Password Reset](#password-reset)
   - [Software Design Description](#software-design-description)
-- [It contains images of how the system look](#it-contains-images-of-how-the-system-look)
 
 ## Introductuion
 
@@ -93,5 +92,5 @@ this will allow users to change their password and reset if forgotten
 ## Software Design Description
 
 It contains images of how the system look
-=======
+ kljliu
 
