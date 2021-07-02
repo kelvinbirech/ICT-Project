@@ -7,20 +7,23 @@
           <title>Login || Registration</title>
           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
           <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-          <link rel="stylesheet" href="style.css">
+          
+          <link href="assets/css/style1.css" rel="stylesheet">
 </head>
 <body>
 
 <div class="header" id="header">
                         <header>
-                                <div class="logo" id="logo">
-                                        <h2>MY CITY</h2>
-                                </div>
+                        <div id="logo">
+        <a href="index.html"><img src="assets/img/Link-Me.PNG" alt=""></a>
+
+      </div>
                                 <nav>
                                         <div class="navlinks">
                                                  <a href="index.php">Home </a>
                                                  <a href="login.php">Login</a>
-                                                 <a href="register.php">Sign-Up</a>
+                                                 
+                                                 
                                         </div>
                                </nav>
                                <div class="menu"></div>
