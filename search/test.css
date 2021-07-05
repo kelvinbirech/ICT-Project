@@ -4,11 +4,6 @@ body{
      background-color: lightgray;
 }
 
-.link-me-img img{
-position: absolute;
-top: 0;
-left: 0;
-}
 
 /*search part*/
 nav{
