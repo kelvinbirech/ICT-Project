@@ -179,7 +179,7 @@ main .services .profiles .icon img{
 .overview{
     background-color: white;
     height: 750px;
-    max-width: 80vh ;
+    max-width: 90vh ;
     margin-left: 70px;
     overflow-y:scroll;
     position: relative;
