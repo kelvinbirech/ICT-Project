@@ -189,6 +189,9 @@ main .services .profiles .icon img{
 }
 .services .profiles input{
     background-color:royalblue;
+    border-radius: 4px;
+    margin-top: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
 }
 .icon h{
     margin-left: 20px;
