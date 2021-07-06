@@ -7,19 +7,14 @@ body{
 
 /*search part*/
 nav{
+    color: white;
+    margin: 0 0 50px 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: darkgray;
     display: inline-block;
-    margin:60px 0 0px 200px;
+    border-radius: 10px;
+}
 
-}
-nav input{
-    height: 20px;
-    border-radius: 7px;
-}
-nav label{
-    font-size: 20px;
-    margin-left: 10px;
-    border-radius: 2px;
-}
 /*end of search */
 
 /*container of the body*/
@@ -34,18 +29,41 @@ nav label{
 /*filter part*/
 aside{
     max-width:200vh;
-    margin-right: 40px;
+    margin-right: 60px;
 }
-aside .first-heading h{
+aside .search-box{
+    padding-top: 50px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: darkgray;
+    height: 80px;
+    max-width: 100vh;
+}
+aside .search-box input{
+    height: 20px;
+    border-radius: 7px;
+}
+aside .search-box label button{
+    background-color: royalblue;
+    font-size: 15px;
+    margin-top: 10px;
+    padding-top: 0px;
+    border-radius: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+.first-heading{
+    margin-top: 30px;
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif; 
     color: crimson;
 }
 .filter{
+    margin-top: 30px;
     padding-right: 5px;
 }
 
 .filter-headings{
+    margin-top: 25px;
 margin-left: 10px;  
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 margin-bottom: 50px 0 50px 0;
@@ -142,7 +160,6 @@ padding: 20px 0 10px 0px;
 /*profile search cards*/
 main{
     max-width: 100vh;
-    margin-top: 40px;
 }
 main .services{
     display: flex;
@@ -168,6 +185,7 @@ main .services{
 main .services .profiles .icon img{
     width: 30px;
     height: auto;
+    background-size: cover;
 }
 .icon h{
     margin-left: 20px;
@@ -236,6 +254,9 @@ margin-left: 50px;
 @media all and (max-width:900px){
     body{
         padding: 0;
+    }
+    nav h1{
+        font-size: 20px;
     }
 main{
     max-width: 50vh; 
