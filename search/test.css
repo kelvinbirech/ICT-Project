@@ -187,6 +187,9 @@ main .services .profiles .icon img{
     height: auto;
     background-size: cover;
 }
+.services .profiles input{
+    background-color:royalblue;
+}
 .icon h{
     margin-left: 20px;
     text-decoration: underline;
