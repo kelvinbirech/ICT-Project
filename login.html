@@ -1,50 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-          <meta charset="UTF-8">
-          <meta http-equiv="X-UA-Compatible" content="IE=edge">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Login || Registration</title>
-          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
-          <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-          <link rel="stylesheet" href="/assets/css/login.css">
-          
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-                 <div class="header" id="header">
-                         <header>
-                                <div class="logo" id="logo">
-                                        <img src="/assets/img/Link-Me.PNG" alt="">
-                                </div>
-                                <div class="nav">
-                                     <nav>
-                                          <div class="navlinks">
-                                             <a href="index.php">Home</a>
-                                             <a href="login.html">Login </i></a>
-                                             <a href="register.html">Sign-Up </a>
-                                          </div>
-                                        </nav>
-                                 </div>
-                               <div class="menu"></div>
-                 </header>       
-                 </div> 
-          
-        <div class="container">
-                <div class="input-group">
-                       <form  method="post"  action="" >
-                                 <h1>Login</h1>
-                          
-                                <h5> <i class="uil uil-user"></i><input type="text"   class="form-control" placeholder="Username" required></h5>
-                            
-                                <h5><i class="uil uil-padlock"></i><input type="password" name="password" placeholder="Create Password" classs="form-control" required ></h5>
-
-                                <input type="submit" value="Login"  class ="form-control">
-
-                                <p>Don't Have an Account? &nbsp;<a href="register.html">SIGN-UP HERE</a></p>
-                        </form>  
-                 </div>
-        </div>
-        
-          <script src="/assets/assets/js/app.js"></script>
+    <div class="centre">
+        <hi>LOGIN</hi>
+        <form method="POST">
+            <div class="post">
+                <div class="text_field">
+                    <input type="text" required>
+                    <label>USERNAME</label>
+                </div>
+                <div class="text_field">
+                    <input type="password" required>
+                    <label>password</label>
+            </div>
+            <div class="pass">forgot password?</div>
+            <input type="submit" value="login">
+            <div class="signup_link">
+                NOT A MEMBER? <a href="#">signup</a>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
