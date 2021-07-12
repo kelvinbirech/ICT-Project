@@ -190,7 +190,7 @@ form{
                     width:23px;
                     height:23px;
                     cursor:pointer;
-                    background: url(/assets/img/bars.svg) no-repeat;
+                    background: url(assets/img/bars.svg) no-repeat;
             }
             .menu.active{
                     z-index:9;
@@ -198,7 +198,7 @@ form{
                     width:23px;
                     height:23px;
                     cursor:pointer;
-                    background: url(/assets/img/times.svg) no-repeat;
+                    background: url(assets/img/times.svg) no-repeat;
             }
                  .input-group{
                          justify-content:center;
