@@ -8,7 +8,7 @@
 </head>
 <body>
 <div id="center">
-<div id="center-set">
+<div id="center-set"> WRITTEN BY OMAR MOHAMMED-DSE-01-0010-2020
 <div id="signup">
 <div id="signup-st">
 <div align="center">
@@ -57,7 +57,7 @@ echo ' <div id="reg-head-fail" class="headrg">Registration Failed! <br> Error: '
 </table>
 <div id="st"><input name="submit" type="submit" value="Submit" id="st-btn"/></div>
 </form>
-<div id="reg-bottom" class="btmrg">Copyright &copy; omarmoh.dev</div>
+<div id="reg-bottom" class="btmrg">Copyright &copy; DSE-01-0010/2020</div>
 </div>
 </div>
 <div id="login">
@@ -84,8 +84,13 @@ echo ' <div id="reg-head-fail" class="headrg">Login Failed!, Invalid Credentials
 </table>
 <div id="st"><input name="submit" type="submit" value="Login" id="st-btn"/></div>
 </form>
+ <div id="reg-bottom" class="btmrg">Copyright &copy; DSE-01-0010/2020</div>
 </div>
 </div>
-</div>
-</body>
+ </div>
+ </div>
+ <div id="footer"><p> Copyright &copy; DSE-01-0010/2020</p></div>
+ </body>
 </html>
+
+ 
