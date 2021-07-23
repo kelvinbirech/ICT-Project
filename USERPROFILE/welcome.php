@@ -6,7 +6,7 @@
 <head>
  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
  <link rel="stylesheet" type="text/css" href="style.css" />
- <title>7topics - Login Demo</title>
+ <title>LINK-ME</title>
 </head>
 <body>
 <header>
@@ -17,8 +17,8 @@
  </nav>
 </header>
 <div id="center">
-<div id="center-set"> -written by Rahul Ranjan
-<h1 align='center'>Welcome <?php echo $loggedin_session; ?>,</h1>
+<div id="center-set"> -WRITEN BY DSE-01-0010/2020
+<h1 align='center'>KINDLY WELCOME TO LINK-ME <?php echo $loggedin_session; ?>,</h1>
 You are now logged in. you can logout by clicking on signout link given below.
 <div id="contentbox">
 <?php
@@ -50,7 +50,7 @@ while($rows=mysqli_fetch_array($result)){
 <td class="tl-4"><?php echo $rows['address']; ?></td>
 </tr>
 </table>
-<div id="reg-bottom" class="btmrg">Copyright &copy; OMARMOH.DEV</div>
+<div id="reg-bottom" class="btmrg">Copyright &copy; DSE-01-0010/2020</div>
 </form>
 </div>
 </div>
@@ -68,6 +68,6 @@ while($rows=mysqli_fetch_array($result)){
 </div>
 </div>
 </br>
-<div id="footer"><p> Copyright &copy; OMARMOH.DEV 2020-2021 </p></div>
+<div id="footer"><p> Copyright &copy; DSE-01-0010/2020 </p></div>
 </body>
 </html>
