@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include('db.php');
+include('database.php');
 $username=$_POST['username'];
 $result = mysqli_query($con,"SELECT * FROM member WHERE username='$username'");
 $num_rows = mysqli_num_rows($result);
@@ -12,7 +12,7 @@ if ($num_rows) {
  $address=$_POST['address'];
  $username=$_POST['username'];
  $password=$_POST['password'];
- if(mysqli_query($con,"INSERT INTO member(fname, lname, address,username, password)VALUES('$fname', '$lname','$address', '$username', '$password')")){ 
+ if(mysqli_query($con,"INSERT INTO usertable(fname, lname, address,username, password)VALUES('$fname', '$lname','$address', '$username', '$password')")){ 
  header("location: index.php?remarks=success");
  }else{
   $e=mysqli_error($con);
