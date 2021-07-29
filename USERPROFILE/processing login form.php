@@ -16,7 +16,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
  $count=mysqli_num_rows($result);
  if($count==1) {
   $_SESSION['login_user']=$username;
-  header("location: welcome.php");
+  header("location: welcomepage.php");
  }
 }
 ?>
