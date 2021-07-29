@@ -1,60 +1,47 @@
-<?php
-    include('includes/header.php');
-    include('config/db.php');
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login System</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Login || Registration</title>
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+          <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+          <link rel="stylesheet" href="assets/css/login.css">
+          
+
 </head>
 <body>
-    <header>
-        <?php
-            include('includes/navigation.php');
-        ?>
-    </header>
+    <div class="header" id="header">
+        <header>
+                <div class="logo" id="logo">
+                        <img src="assets/img/Link-Me.PNG" alt="">
+                </div>
+                <nav>
+                        <div class="navlinks">
+                                 <a href="index.php">Home </a>
+                                 <a href="login.html">Login</a>
+                                 <a href="register.html">Sign-Up</a>
+                        </div>
+               </nav>
+               <div class="menu"></div>
+        </header>       
+</div> 
+        <div class="container">
+                <div class="input-group">
+                       <form  method="post"  action="" >
+                                 <h1>Login</h1>
+                          
+                                <h5> <i class="uil uil-user"></i><input type="text"   class="form-control" placeholder="Username" required></h5>
+                            
+                                <h5><i class="uil uil-padlock"></i><input type="password" name="password" placeholder="Create Password" classs="form-control" required ></h5>
 
-    <div align="center">
-        <hr>
-        <br>
-    <?php
-        if(isset($_GET['success'])){
-            if($_GET['success'] == 'loggedOut'){
-                ?>
-                    <small class='alert alert-info'>Logged out successfully </small>
-                <?php
-            }else if($_GET['success'] == 'loggedIn'){
-                ?>
-                    <small class='alert alert-success'>Logged in successfully </small>
-                <?php
-            }
-        }
+                                <input type="submit" value="Login"  class ="form-control">
 
-
-        
-       ?>
-        <br>
-        <hr>
-        <br>
-       <?php
-        if(!isset($_SESSION['user_name'])){
-            ?>
-                <h3>Log in to access data </h3>
-            <?php
-        }else{
-            ?>
-                <h3>Welcome <?php echo ucfirst($_SESSION['user_name']); ?></h3>
-                
-                <img src="public/userImages/<?php echo $_SESSION['user_image']; ?>" alt="" 
-                width="100px" height="100px">
-            <?php
-        }
-       ?>
-    </div>
-
-
+                                <p>Don't Have an Account? &nbsp;<a href="register.html">SIGN-UP HERE</a></p>
+                        </form>  
+                 </div>
+        </div>
+          <script src="assets/js/login-reg.js"></script>
 </body>
 </html>
