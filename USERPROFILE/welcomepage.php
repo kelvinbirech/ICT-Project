@@ -17,8 +17,8 @@
  </nav>
 </header>
 <div id="center">
-<div id="center-set"> -WRITEN BY DSE-01-0010/2020
-<h1 align='center'>KINDLY WELCOME TO LINK-ME <?php echo $loggedin_session; ?>,</h1>
+<div id="center-set"> -CODED BY OMAR MOHAMMED. DSE-01-0010/2020
+<h1 align='center'>KINDLY WELCOME TO LINK-ME PLATFORM <?php echo $loggedin_session; ?>,</h1>
 You are now logged in. you can logout by clicking on signout link given below.
 <div id="contentbox">
 <?php
@@ -60,8 +60,7 @@ while($rows=mysqli_fetch_array($result)){
 <div id="st"><a href="deleteac.php" id="st-btn">Delete Account</a></div>
 </div>
 </div>
-<?php 
-// close while loop 
+<?php  
 }
 ?>
 </div>
