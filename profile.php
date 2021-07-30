@@ -10,7 +10,7 @@
 <body>
           <div class="cover">
                     <form action="">
-                              <input type="file" class="image" id="image" placeholder="image">
+                              <input type="file" class="image" id="image" placeholder="image"  enctype="">
                     </form>
           </div>
           <div class="p-image">
