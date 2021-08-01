@@ -36,12 +36,27 @@
                             
                                 <h5><i class="uil uil-padlock"></i><input type="password" name="password" placeholder="Create Password" classs="form-control" required ></h5>
 
-                                <input type="submit" value="Login"  class ="form-control">
+                                <input type="submit" value="Login"  class ="form-control" <?php header("location :index.php")  ?>>
 
-                                <p>Don't Have an Account? &nbsp;<a href="register.html">SIGN-UP HERE</a></p>
+                                <p>Don't Have an Account? &nbsp;<a href="register.php">SIGN-UP HERE</a></p>
                         </form>  
                  </div>
         </div>
           <script src="assets/js/login-reg.js"></script>
 </body>
 </html>
+<?php
+
+session_start();
+ 
+if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+    header("location: index.php");
+    exit;
+}
+$db = mysqli_connect("localhost","root","","login") or die();
+
+                $sql = "SELECT username, password FROM users WHERE username = ?";
+                $result = $db->query($sql);
+
+
+?>

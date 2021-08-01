@@ -20,8 +20,8 @@
                                 <nav>
                                         <div class="navlinks">
                                                  <a href="index.php">Home </a>
-                                                 <a href="login.html">Login</a>
-                                                 <a href="register.html">Sign-Up</a>
+                                                 <a href="login.php">Login</a>
+                                                 <a href="register.php">Sign-Up</a>
                                         </div>
                                </nav>
                                <div class="menu"></div>

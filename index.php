@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+ 
+if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === false){
+    header("location: login.php");
+    exit;
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,8 +52,8 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><button type="button" class="btn btn-primary"><a href="login.html">Sign up</a></button></li>
-          <li><button type="button" class="btn btn-primary"  > <a href="register.html">Sign in</a></button></li>
+          <li><button type="button" class="btn btn-primary"><a href="register.php">Sign up</a></button></li>
+          <li><button type="button" class="btn btn-primary"  > <a href="login.php">Sign in</a></button></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
