@@ -1,4 +1,4 @@
-
+<?php include('server.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +29,6 @@
 </div> 
 <div class="container">
 
-
           <div class="input-group">
                     <form method="post"  action="">
 
@@ -42,34 +41,13 @@
 
                     <h5><i class="uil uil-padlock"></i><input type="password" name="password" placeholder="Create Password" classs="form-control" required ></h5>
 
+
                     <input type="submit" name="register" value="Sign Up" class="form-control">
 
                     <p>Already a Member?&nbsp; <a href="login.php">LOGIN HERE</a></p>
                     </form>
                 </div>
 </div>
-                    <?php
-                    $sql = "ALTER TABLE `useraccounts` ADD UNIQUE(`email`)";
-                    
-                        $db = mysqli_connect("localhost","root","","login") or die();
-                        {
-                                if(isset($_POST['register'])){
-                                        $username = $_POST['username'];
-
-                                        $email  = $_POST['email'];
-
-                                        $password = md5 ($_POST['password']); //encrypted password
-
-                                        $query =  "INSERT INTO  useraccounts(username ,  email,  password ) VALUES ('$username','$email','$password')";
-
-                                        mysqli_query($db ,$query);
-
-                                    $run_insert = mysqli_query($db ,$query);
-
-                                    echo "Registration Successful";
-                                }
-                        }
-                      ?>
             
 
             <script src="assets/js/login-reg.js"></script>

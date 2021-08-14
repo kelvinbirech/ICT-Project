@@ -1,3 +1,4 @@
+<?php include('server.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,13 +31,13 @@
         <div class="container">
                 <div class="input-group">
                        <form  method="post"  action="" >
+                           <?php include('errors.php'); ?>
                                  <h1>Login</h1>
-                          
                                 <h5> <i class="uil uil-user"></i><input type="text"   class="form-control" placeholder="Username" required></h5>
                             
                                 <h5><i class="uil uil-padlock"></i><input type="password" name="password" placeholder="Create Password" classs="form-control" required ></h5>
 
-                                <input type="submit" value="Login"  class ="form-control" <?php header("location :index.php")  ?>>
+                                <input type="submit" value="Login"  class ="form-control">
 
                                 <p>Don't Have an Account? &nbsp;<a href="register.php">SIGN-UP HERE</a></p>
                         </form>  
@@ -46,17 +47,5 @@
 </body>
 </html>
 <?php
-
-session_start();
- 
-if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-    header("location: index.php");
-    exit;
-}
-$db = mysqli_connect("localhost","root","","login") or die();
-
-                $sql = "SELECT username, password FROM users WHERE username = ?";
-                $result = $db->query($sql);
-
 
 ?>
