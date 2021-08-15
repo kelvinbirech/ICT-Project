@@ -105,3 +105,6 @@ It contains images of how the system look
  ![Register](assets/img/reg.png)
 1. Login
 ![Login](assets/img/login.png)
+
+search page
+![search image](search/search.png)
