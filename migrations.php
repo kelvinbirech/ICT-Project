@@ -1,6 +1,6 @@
 <?php
 
-    require_once '/xampp/htdocs/Linkme/search/database.php';
+    require_once './search/database.php';
     //users table
 
     echo "Creating users table\n";
