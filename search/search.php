@@ -15,7 +15,7 @@ require_once '/xampp/htdocs/Linkme/search/database.php';
       <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
       <link rel="stylesheet" type="text/css" href="/search/search.css">
       <title>Link Me | Search</title>
-      <style>
+<!--       <style>
             .menubar ul li {
                   list-style-type: none;
             }
@@ -79,7 +79,7 @@ require_once '/xampp/htdocs/Linkme/search/database.php';
                   float: right;
                   margin-top: 5px;
             }
-      </style>
+      </style> -->
 </head>
 
 <body>
