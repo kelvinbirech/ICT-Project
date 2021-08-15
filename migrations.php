@@ -1,41 +1,41 @@
 <?php
 
-require_once './core/Database.php';
+    require_once './core/database.php';
+    //users table
 
-echo "Applying Migrations\n";
+    echo "Creating users table\n";
+    $sql = "CREATE TABLE IF NOT EXISTS `user` (
+        `id` SERIAL,
+        `first_name` tinytext NOT NULL,
+        `last_name` tinytext NOT NULL,
+        `email` VARCHAR(150) NOT NULL UNIQUE,
+        `password` tinytext NOT NULL,
+        `added_on` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+      ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4";
+    $STH = $DBH->prepare($sql);
+    $STH->execute();
+    echo "Created users table\n";
 
-$sql = 'CREATE TABLE IF NOT EXISTS user(id SERIAL,first_name TINYTEXT NOT NULL,last_name TINYTEXT NOT NULL,email TINYTEXT NOT NULL,password TINYTEXT NOT NULL, is_staff BOOLEAN NOT NULL DEFAULT 0,last_updated TIMESTAMP);';
-// To prevent SQL INJECTION prepare first
-$command = $db->prepare($sql);
-$command->execute();
+    //albums table
+    echo "Creating profile table\n";
 
-echo "Applied Migrations\n";
-
-
-echo "Applying Migrations\n";
-
-$sql = 'CREATE TABLE IF NOT EXISTS `song` (
-    `id` bigint(20) UNSIGNED NOT NULL,
-    `song_title` tinytext NOT NULL,
-    `audio_file` tinytext NOT NULL,
-    `is_favorite` tinyint(1) NOT NULL DEFAULT 0,
-    `album` bigint(20) UNSIGNED NOT NULL,
-    `added_on` timestamp);';
-// To prevent SQL INJECTION prepare first
-$command = $db->prepare($sql);
-$command->execute();
-
-echo "Applied Migrations\n";
-
-echo "Applying Migrations\n";
-
-$sql = 'ALTER TABLE user DROP is_super_admin;';
-// To prevent SQL INJECTION prepare first
-$command = $db->prepare($sql);
-$command->execute();
-
-echo "Applied Migrations\n";
-
+    $STH = $DBH->prepare("CREATE TABLE IF NOT EXISTS `profiles` (
+        `id` SERIAL,
+        
+        `displayname` tinytext NOT NULL,
+        `expertise` tinytext NOT NULL,
+        `about` tinytext NOT NULL,
+        `website` tinytext,
+        `email` tinytext NOT NULL,
+        `telephone` tinytext NOT NULL,
+        `user` bigint(20) UNSIGNED NOT NULL,
+        `added_on` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+        FOREIGN KEY(user) REFERENCES user(id) ON DELETE RESTRICT ON UPDATE CASCADE
+      ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4");
+    $STH->execute();
+    echo "Created profile table\n";
 
 
-?>
+    echo "finished apllying all migrations."
+
+ ?>

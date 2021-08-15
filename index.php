@@ -1,13 +1,3 @@
-<?php
-
-session_start();
- 
-if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === false){
-    header("location: login.php");
-    exit;
-}
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -66,13 +56,17 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === false){
       <h1>Hello Welcome to Link-Me</h1>
       <h2 data-aos="zoom-out" data-aos-delay="300"> A portal to bridge the gap between developers and clients, simply Search and select</h2>
         <div class="container-fluid">
-          <form class="d-flex">
-            <input class="form-control search" type="search" placeholder="Search" aria-label="Search" data-aos="zoom-in" data-aos-delay="300">
-            <button class="btn0" type="submit" data-aos="fade-left" data-aos-delay="300"> <a href="test.html">Search</a></button>
-          </form>
-        </div>
-      </nav>   
-    </div>
+          
+         
+   <script>
+     function myFunction() {
+       window.location.href="./search.php";  
+     }
+   </script>
+          <input   class="btn0" type="submit" onClick="myFunction()" style="width: 50%;" style="background:  #0275d8;" data-aos="fade-left" data-aos-delay="300" onclick="search.php" value="Proceed To Search Page"><a href="search.php"></a></input>
+          </div>
+           
+      </div>
     
   </section><!-- End Hero Section -->
 

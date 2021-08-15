@@ -1,55 +1,113 @@
-<?php include('server.php') ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-          <meta charset="UTF-8">
-          <meta http-equiv="X-UA-Compatible" content="IE=edge">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Login || Registration</title>
-          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
-          <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-          <link rel="stylesheet" href="assets/css/login.css">
-</head>
 <body>
-
-<div class="header" id="header">
-                        <header>
-                                <div class="logo" id="logo">
-                                        <img src="assets/img/Link-Me.PNG" alt="">
-                                </div>
-                                <nav>
-                                        <div class="navlinks">
-                                                 <a href="index.php">Home </a>
-                                                 <a href="login.php">Login</a>
-                                                 <a href="register.php">Sign-Up</a>
-                                        </div>
-                               </nav>
-                               <div class="menu"></div>
-                        </header>       
-</div> 
-<div class="container">
-
-          <div class="input-group">
-                    <form method="post"  action="">
-
-                    <h1>Sign Up</h1>
-
-                    
-                    <h5> <i class="uil uil-user"></i> <input type="text" name="username"  class="form-control" placeholder="Username" required></h5>
-
-                    <h5> <i class="uil uil-envelope-alt"></i><input type="email" name="email"  class="form-control" placeholder="Email Address" required></h5>
-
-                    <h5><i class="uil uil-padlock"></i><input type="password" name="password" placeholder="Create Password" classs="form-control" required ></h5>
-
-
-                    <input type="submit" name="register" value="Sign Up" class="form-control">
-
-                    <p>Already a Member?&nbsp; <a href="login.php">LOGIN HERE</a></p>
-                    </form>
-                </div>
-</div>
+    
+<head>
+    <style>
+        body {
+            background-image: url(assets/img/hero-bg.jpg);
+            background-size: cover;
             
+        }
 
-            <script src="assets/js/login-reg.js"></script>
+        .card-body{
+            background-color: whitesmoke;
+            width: 400px;
+            height:550px;
+ 
+
+        }
+    </style>
+</head>
+
+<?php
+require_once './template/header.php';
+require_once './core/database.php';
+?>
+
+
+<?php
+    if(isset($_POST['submit'])) {
+        
+        
+        $first_name = $_POST['firstname'];
+        $last_name = $_POST['lastname'];
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+        $confirmpassword = $_POST['confirmpassword'];
+        
+        if ($password != $confirmpassword) {
+            $_SESSION['error'] = "Passwords do not match";
+        }
+        
+        else {            
+            
+            try{
+                
+                //Encrypt password
+                $password = password_hash($password,PASSWORD_DEFAULT);
+                
+                $STH = $DBH->prepare("INSERT INTO user(first_name, last_name, email,password) values(?,?,?,?)");
+                $data = array($first_name,$last_name,$email,$password);
+                $STH->execute($data); 
+                
+                $_SESSION['success'] = "Registration Successful Please Proceed To Sign In Page";
+                header('location: login.php');
+                unset($first_name);
+                unset($last_name);
+                unset($email);
+                unset($password);
+                unset($confirmpassword);
+            }
+            catch(PDOException $e){
+                $_SESSION['error'] = "Hey, $first_name. can't register now try later  :(.";
+                echo $e->getMessage();
+                exit();
+                file_put_contents('../PDOErrors.txt',"\n". date('Y-m-d H:i:s').'] - '.$e->getMessage(), FILE_APPEND); # log errors to afile
+            }
+        }
+    }
+    ?>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-6 m-auto p-3 mt-2">
+        
+                <div class="card-body">
+                    <h3 class="text-center">Create Account</h3>
+                    <div id="alert">
+                        <?php require_once "./feedback.php"; ?>
+                    </div>
+                    <form action="" method="post">
+                        
+                        
+                            <div class="from-group mb-3">
+                                <label for="firstname">First Name</label>
+                                <input name="firstname" id="firstname" type="text" value="<?php echo $first_name ?? ""; ?>" class="form-control" required>
+                            </div>
+                        
+                        
+                            <div class="from-group mb-3">
+                                <label for="lastname">Last Name</label>
+                                <input name="lastname" id="lastname" type="text" class="form-control" value="<?php echo $last_name ?? ""; ?>" required>
+                            </div>
+                            
+                        
+                        <div class="from-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" value="<?php echo $email ?? ""; ?>"  id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="from-group mb-3">
+                            <label for="password">Create A Password</label>
+                            <input type="password" value="<?php echo $password ?? ""; ?>" id="password" name="password" class="form-control" required>
+                        </div>
+                        <div class="from-group mb-3">
+                            <label for="confirmpassword">Confirm The Password</label>
+                            <input type="password" value="<?php echo $confirmpassword ?? ""; ?>"  id="confirmpassword" name="confirmpassword" class="form-control" required>
+                </div>
+                <input style="width:100%" type="submit" value="Create Account" class="btn btn-primary" name="submit">
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+
 </body>
-</html>
