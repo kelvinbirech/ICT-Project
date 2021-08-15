@@ -101,5 +101,7 @@ It contains images of how the system look
 
 ### Login+Register Page
 
-![Register](assets/img/reg.png)
+1. Register
+ ![Register](assets/img/reg.png)
+1. Login
 ![Login](assets/img/login.png)
