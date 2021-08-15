@@ -106,5 +106,5 @@ It contains images of how the system look
 1. Login
 ![Login](assets/img/login.png)
 
-1 search page
-![search image](search/search.jpg)
+search page
+![search image](search/search.png)
