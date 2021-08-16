@@ -11,15 +11,6 @@ This repesitory is for the last project of DIPLOMA IN  SOFWARE ENGINEERING Cours
 
 ## Sofware Requirement Specification
 
-&nbsp;  
-
-### DSE-01-0015/2020 Kiplangat Edwin
-
-### DSE-01-0010/2020 Omar moh’d noor
-
-### DSE-01-0158/2019 Kelvin Birech
-
-### DSE-01-1617/2020 Humphrey Njeri Kamau
 
 &nbsp;  
 
@@ -43,6 +34,8 @@ This repesitory is for the last project of DIPLOMA IN  SOFWARE ENGINEERING Cours
     - [logout](#logout)
     - [Password Reset](#password-reset)
   - [Software Design Description](#software-design-description)
+    - [HomePage](#homepage)
+    - [Login+Register Page](#loginregister-page)
 
 ## Introductuion
 
@@ -92,3 +85,17 @@ this will allow users to change their password and reset if forgotten
 ## Software Design Description
 
 It contains images of how the system look
+
+### HomePage
+
+![HomePage Image](assets/img/index.png)
+
+### Login+Register Page
+
+1. Register
+ ![Register](assets/img/regi.png)
+1. Login
+![Login](assets/img/loginn.png)
+
+search page
+![search image](search/search.png)
