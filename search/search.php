@@ -15,7 +15,7 @@ require_once 'database.php';
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" type="text/css" href="/search/search.css">
+        <link href="./search.css" rel="stylesheet">
     <title>Link Me | Search</title>
     <!--       <style>
             .menubar ul li {
@@ -88,7 +88,7 @@ require_once 'database.php';
     <div class="container">
         <div class="row">
             <div class="col ">
-                <h1 class="mb-10">lets find the perfect ICT proffessional for you</h1>
+                <h1 class="mb-10"style="color:white;">lets find the perfect ICT proffessional for you</h1>
             </div>
         </div>
         <!--search part-->
@@ -244,18 +244,15 @@ require_once 'database.php';
 
                                     foreach ($row as $rows) { ?>
                         <div class="row g-0">
-                            <div class="col-md-4">
-                                <img class="img-fluid rounded-start"> <?php echo $rows['image']; ?>
-                            </div>
                             <div class="col-md-8">
-                                <div class="card-body">
+                                <div class="card-body" style="background:white;">
 
                                     <h5 class="card-title"><?php echo $rows['displayname']; ?></h5>
                                     <p class="card-text"><?php echo $rows['expertise']; ?></p>
                                     <form action="" method="post">
                                         <input type="hidden" value="<?php echo $rows['id']; ?>" name="id">
 
-                                        <input class="btn btn-primary" type="submit" value="View Profile overview"
+                                        <input class="btn btn-primary" type="submit" value="View Profile "
                                             name="get_profile_overview">
                                     </form>
                                 </div>
@@ -291,14 +288,19 @@ require_once 'database.php';
                               if ($profile) { ?>
                 <img class="card-img-top"> <?php echo $profile['image']; ?>
                 <div class="card-body">
-                    <h5 class="card-title"><?php echo $profile['displayname']; ?></h5>
-                    <p class="card-text"><?php echo $profile['about']; ?></p>
+                    <h5 class="card-title">Name: &nbsp;<?php echo $profile['displayname']; ?></h5>
+                    <p class="card-text">About :&nbsp;<span><?php echo $profile['about']; ?></span></p>
+                    <h5 class="card-title">Telephone:&nbsp;<span style="font-size:1rem; font-weight:400"><?php echo $profile['telephone']; ?></span></h5>
+                    <h5<p class="card-text">Email : &nbsp; <span><?php echo $profile['email']; ?></span></p></h5>
+                    <h5 <p class="card-text">Website : &nbsp; <span><?php echo $profile['website']; ?></span></p></h5>
                 </div>
                 <div class="card-body">
+
+         
                     <form action="" method="post" class="card-link">
                         <input type="hidden" value="<?php echo $id; ?>" name="keyword">
                         <input class="btn btn-primary" type="submit" value="view main profile" name="View_main_profile">
-                    </form>
+               
                 </div>
             </div>
             <?php
