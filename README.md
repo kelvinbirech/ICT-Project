@@ -88,7 +88,7 @@ It contains images of how the system look
 
 ### HomePage
 
-![HomePage Image](assets/img/homepage.png)
+![HomePage Image](assets/img/index.png)
 
 ### Login+Register Page
 
