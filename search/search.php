@@ -296,7 +296,7 @@ require_once 'database.php';
                 </div>
                 <div class="card-body">
                     <form action="" method="post" class="card-link">
-                        <input type="hidden" value="<?php echo $keyword; ?>" name="keyword">
+                        <input type="hidden" value="<?php echo $id; ?>" name="keyword">
                         <input class="btn btn-primary" type="submit" value="view main profile" name="View_main_profile">
                     </form>
                 </div>
@@ -312,7 +312,7 @@ require_once 'database.php';
     // <?php
             // if (isset($_POST['View_main_profile'])) {
             //       $keyword = $_POST['keyword'];
-            //       $query = $db->prepare('SELECT * FROM profiles WHERE epxertise LIKE ?');
+            //       $query = $db->prepare('SELECT * FROM profiles WHERE exepertise LIKE ?');
             //       $query->execute($keyword);
             // }
             // 
