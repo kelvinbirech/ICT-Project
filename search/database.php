@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost';
-$dbname = 'link-me';
+$dbname = 'linkme';
 $user = 'root';
 $pass = '';
 try{

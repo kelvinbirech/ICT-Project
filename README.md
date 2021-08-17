@@ -1,4 +1,3 @@
-
 # ZETECH UNIVERSITY
 
 ## ICT Department
@@ -7,21 +6,13 @@ This repesitory is for the last project of DIPLOMA IN  SOFWARE ENGINEERING Cours
 
 &nbsp;
 
-## Computer Systems Project
-
-## Sofware Requirement Specification
-
+## Sofware Requirement specification
 
 &nbsp;  
 
 - [ZETECH UNIVERSITY](#zetech-university)
   - [ICT Department](#ict-department)
-  - [Computer Systems Project](#computer-systems-project)
-  - [Sofware Requirement Specification](#sofware-requirement-specification)
-    - [DSE-01-0015/2020 Kiplangat Edwin](#dse-01-00152020-kiplangat-edwin)
-    - [DSE-01-0010/2020 Omar moh’d noor](#dse-01-00102020-omar-mohd-noor)
-    - [DSE-01-0158/2019 Kelvin Birech](#dse-01-01582019-kelvin-birech)
-    - [DSE-01-1617/2020 Humphrey Njeri Kamau](#dse-01-16172020-humphrey-njeri-kamau)
+  - [Sofware Requirement specification](#sofware-requirement-specification)
   - [Introductuion](#introductuion)
   - [Objectives](#objectives)
   - [The Users Of The System](#the-users-of-the-system)
