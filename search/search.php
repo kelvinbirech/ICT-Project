@@ -1,5 +1,5 @@
 <?php
-require_once 'database.php';
+require_once '../core/database.php';
 ?>
 
 <!doctype html>
@@ -212,7 +212,7 @@ require_once 'database.php';
 
                               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li class="nav-item">
-                                          <a class="nav-link active" aria-current="page" href="./index.php">Home</a>
+                                          <a class="nav-link active" aria-current="page" href="../index.php">Home</a>
                                     </li>
                               </ul>
                         </div>
@@ -233,7 +233,7 @@ require_once 'database.php';
                                           $keyword = $_POST['keyword'];
                                           // $experience = $_POST['experience'];
                                           if ($keyword != "") {
-                                                $query = $db->prepare("SELECT * FROM profiles WHERE expertise = :expertise ");
+                                                $query = $DBH->prepare("SELECT * FROM profiles WHERE expertise = :expertise ");
                                                 $data = array(':expertise' => $keyword);
                                                 $query->execute($data);
                                                 $row = $query->fetchAll();
@@ -279,7 +279,7 @@ require_once 'database.php';
                         if (isset($_POST['get_profile_overview'])) {
                               // $one = $row['username'];
                               $id = $_POST['id'];
-                              $query = $db->prepare("SELECT * FROM profiles WHERE id=?");
+                              $query = $DBH->prepare("SELECT * FROM profiles WHERE id=?");
                               $query->execute([$id]);
                               $profile = $query->fetch();
                               if ($profile) { ?>
