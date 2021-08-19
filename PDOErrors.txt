@@ -11,4 +11,4 @@
 2021-08-16 10:30:51] - SQLSTATE[HY000] [1049] Unknown database 'linkme'
 2021-08-16 11:29:06] - SQLSTATE[HY000] [1049] Unknown database 'linkme'
 2021-08-16 11:29:12] - SQLSTATE[HY000] [1049] Unknown database 'linkme'
-2021-08-16 11:29:14] - SQLSTATE[HY000] [1049] Unknown database 'linkme'
+2021-08-16 11:29:14] - SQLSTATE[HY000] [1049] Unknown database 'linkme'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'salary' in 'field list'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'salary' in 'field list'
