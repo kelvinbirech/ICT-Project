@@ -40,6 +40,8 @@ echo "Created profile table\n";
 // $STH->execute();
 $STH = $DBH->prepare("ALTER TABLE profiles ADD experience INT(100)");
 $STH->execute();
+$STH = $DBH->prepare("ALTER TABLE profiles ADD salary INT(100)");
+$STH->execute();
 
 echo "finished applying all migrations."
 
