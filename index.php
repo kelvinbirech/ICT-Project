@@ -62,12 +62,12 @@
 
                 <script>
                 function myFunction() {
-                    window.location.href = "./search/search.php";
+                    window.location.href = "search.php";
                 }
                 </script>
                 <input class="btn0" type="submit" onClick="myFunction()" style="width: 50%;"
                     style="background:  #0275d8;" data-aos="fade-left" data-aos-delay="300" onclick="search.php"
-                    value="Proceed To Search Page"><a href="/search/search.php"></a></input>
+                    value="Proceed To Search Page"><a href="search.php"></a></input>
             </div>
 
         </div>

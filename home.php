@@ -136,6 +136,8 @@ if (isset($_POST['submit'])) {
     $displayname = $_POST['displayname'];
     $expertise = $_POST['expertise'];
     $about = $_POST['about'];
+    $experience = $_POST['experience'];
+    $salary = $_POST['salary'];
     $website = $_POST['website'];
     $email = $_POST['email'];
     $telephone = $_POST['telephone'];
@@ -147,8 +149,8 @@ if (isset($_POST['submit'])) {
 
 
     try {
-        $STH = $DBH->prepare("INSERT INTO profiles(displayname,expertise,about,website,email,telephone,user) values(?,?,?,?,?,?,?)");
-        $data = array($displayname, $expertise, $about, $website,$email, $telephone,$user);
+        $STH = $DBH->prepare("INSERT INTO profiles(displayname,expertise,about, experience,salary,website,email,telephone,user) values(?,?,?,?,?,?,?,?,?)");
+        $data = array($displayname, $expertise, $about,$experience,$salary, $website,$email, $telephone,$user);
         $STH->execute($data);
 
         $_SESSION['success'] = "Profile Updated Successfully";
@@ -186,6 +188,14 @@ if (isset($_POST['submit'])) {
                                 </div>
                                 <div>
                                     <input type="text" name="expertise" value="<?php echo $expertise ?? ""; ?>" placeholder="What is your expertise" required>
+
+                                </div>
+                                <div>
+                                    <input type="text" name="salary" value="<?php echo $salary ?? ""; ?>" placeholder="How Much do You earn ksh10000 or less(10000)  ksh10001 - ksh50000(50000) ksh50001 and above(50001)" required>
+
+                                </div>
+                                <div>
+                                    <input type="text" name="experience" value="<?php echo $experience ?? ""; ?>" placeholder="How Many Years of Experience do you Have (1 or 2 or 3)" required>
 
                                 </div>
                                 <div>
