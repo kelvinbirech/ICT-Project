@@ -2,12 +2,7 @@
 
 &nbsp;
 
-## Sofware Requirement specification
-
-&nbsp;  
-
-- [ZETECH UNIVERSITY](#zetech-university)
-  - [ICT Department](#ict-department)
+## Sofware Requirement 
   - [Sofware Requirement specification](#sofware-requirement-specification)
   - [Introductuion](#introductuion)
   - [Objectives](#objectives)
