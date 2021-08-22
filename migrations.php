@@ -29,6 +29,8 @@ $STH = $DBH->prepare("CREATE TABLE IF NOT EXISTS `profiles` (
     `website` tinytext,
     `email` tinytext NOT NULL,
     `telephone` tinytext NOT NULL,
+    `salary` INT NOT NULL,
+    `experience` tinytext NOT NULL,
     `user` bigint(20) UNSIGNED NOT NULL,
     `added_on` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
     FOREIGN KEY(user) REFERENCES user(id) ON DELETE RESTRICT ON UPDATE CASCADE
@@ -40,6 +42,10 @@ echo "Created profile table\n";
 // $STH->execute();
 $STH = $DBH->prepare("ALTER TABLE profiles ADD experience INT(100)");
 $STH->execute();
+$STH = $DBH->prepare("ALTER TABLE profiles ADD salary INT(100)");
+$STH->execute();
+
+
 
 echo "finished applying all migrations."
 
