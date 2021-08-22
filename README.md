@@ -1,17 +1,8 @@
-# ZETECH UNIVERSITY
 
-## ICT Department
-
-This repesitory is for the last project of DIPLOMA IN  SOFWARE ENGINEERING Course work. Collaborated by 4 members Omar moh'dNoor (Spokesperson), Kiplangat Edwin(Process Analyst), Humprey Kamau Njeri(Quality Control) and Kelvin Birech(Team Leader) towards DEVELOPMENT OF AN ONLINE ICT ACCES SYSTEM BASED ON KENYA
 
 &nbsp;
 
-## Sofware Requirement specification
-
-&nbsp;  
-
-- [ZETECH UNIVERSITY](#zetech-university)
-  - [ICT Department](#ict-department)
+## Sofware Requirement 
   - [Sofware Requirement specification](#sofware-requirement-specification)
   - [Introductuion](#introductuion)
   - [Objectives](#objectives)
