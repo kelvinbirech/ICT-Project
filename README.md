@@ -1,8 +1,4 @@
-# ZETECH UNIVERSITY
 
-## ICT Department
-
-This repesitory is for the last project of DIPLOMA IN  SOFWARE ENGINEERING Course work. Collaborated by 4 members Omar moh'dNoor (Spokesperson), Kiplangat Edwin(Process Analyst), Humprey Kamau Njeri(Quality Control) and Kelvin Birech(Team Leader) towards DEVELOPMENT OF AN ONLINE ICT ACCES SYSTEM BASED ON KENYA
 
 &nbsp;
 
